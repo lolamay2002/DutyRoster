@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guard Management System</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- Display data in a table -->
-    <table id="data-table">
-        <!-- Table headers and rows will be populated using JavaScript -->
-    </table>
+    <header>
+        <h1>Guard Management System</h1>
+    </header>
 
-    <!-- Form for creating/updating records -->
-    <form id="data-form">
-        <!-- Form fields for data input -->
-    </form>
+    <section id="data-section">
+        <h2>Guard Details</h2>
+        <!-- Display data in a table -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Grid Number</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be populated using JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="form-section">
+        <h2>Add or Update Guard</h2>
+        <!-- Form for creating/updating records -->
+        <form id="data-form">
+            <input type="hidden" id="guard-id" name="guard-id">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="grid-number">Grid Number:</label>
+            <input type="text" id="grid-number" name="grid-number" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <button type="submit">Save</button>
+            <button type="button" id="cancel-button">Cancel</button>
+        </form>
+    </section>
 
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
