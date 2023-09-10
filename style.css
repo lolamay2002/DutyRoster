@@ -1,0 +1,103 @@
+/* Reset some default styles */
+body, h1, h2, table, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background color for the dark theme */
+    color: #ffffff; /* Text color for dark theme */
+}
+
+header {
+    background-color: #333; /* Header background color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow to the header */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Section background color for dark theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow to sections */
+    border-radius: 5px; /* Rounded corners for sections */
+    overflow: hidden;
+}
+
+#data-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #444; /* Table borders for dark theme */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #292929; /* Alternate row color for dark theme */
+}
+
+#form-section {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #333; /* Input field borders */
+    border-radius: 5px; /* Rounded corners for input fields */
+    background-color: #2e2e2e; /* Input field background color */
+    color: #ffffff; /* Input text color */
+}
+
+button {
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Button color transition */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Button color on hover */
+}
+
+#cancel-button {
+    background-color: #dc3545; /* Cancel button background color */
+    margin-left: 10px;
+}
+
+#cancel-button:hover {
+    background-color: #c82333; /* Cancel button color on hover */
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px; /* Reduce padding for small screens */
+    }
+}
